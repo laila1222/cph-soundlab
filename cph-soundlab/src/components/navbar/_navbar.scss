@@ -1,6 +1,11 @@
 @import "../../sass/abstracts/variables";
 
 .navbar {
+  // Keeping navbar fixed
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  
   &__link {
     &:link,
     &:visited {

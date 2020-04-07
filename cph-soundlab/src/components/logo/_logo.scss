@@ -4,5 +4,9 @@
     &__title {
         font-size: 4rem;
         color: $color-grey;
+        // Keeping logo fixed
+        position: fixed;
+        top: 3rem;
+        left: 3rem;
     }
 }

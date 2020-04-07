@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
-import Logo from './components/logo/Logo';
-import Navbar from './components/navbar/Navbar';
 import './css/style.css';
+
+import Header from './components/header/header';
+import About from './components/about/about';
+import Work from './components/work/work';
+import Studio from './components/studio/studio';
+import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
 
 class App extends Component {
   constructor(props) {
@@ -15,11 +20,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header className="u-flex u-space-between">
-          <Logo />
-          <Navbar />
-
-        </header>
+        <Header />
+        <About />
+        <Work />
+        <Studio />
+        <Contact />
+        <Footer />
       </div>
     )
   }

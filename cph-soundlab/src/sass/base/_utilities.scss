@@ -1,8 +1,14 @@
 .u-flex {
-    display: flex;
+  display: flex;
 }
 
 .u-space-between {
-    justify-content: space-between;
-    
+  justify-content: space-between;
+}
+
+.u-center-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
