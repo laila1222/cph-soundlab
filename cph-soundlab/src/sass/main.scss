@@ -1,4 +1,8 @@
-
-@import 'base/base';;
+// Base
+@import 'base/animation';
+@import 'base/base';
 @import 'base/utilities';
 @import 'base/typography';
+
+// Abstracts
+@import 'abstracts/variables';

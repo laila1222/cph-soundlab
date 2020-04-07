@@ -1,0 +1,8 @@
+@import '../../sass/abstracts/variables';
+
+.logo {
+    &__title {
+        font-size: 4rem;
+        color: $color-grey;
+    }
+}
