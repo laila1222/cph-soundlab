@@ -1,5 +1,5 @@
 .section-about {
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   // background-color: $color-primary;
   background-image: linear-gradient(
@@ -8,5 +8,36 @@
       rgba($color-primary, 0.9)
     ),
     url(../images/studio.JPG);
+
+    // Parallax effect
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+}
+
+.section-work {
+    background-color: grey;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.section-studio {
+    background-color: rgba($color-primary, 0.9);
+    height: 100vh;
+    position: relative;
+}
+
+.section-contact {
+    background-color: grey;
+    height: 100vh;
+    position: relative;
+
+
+}
+
+footer {
+    height: 3rem;
+    background-color: green;
 }

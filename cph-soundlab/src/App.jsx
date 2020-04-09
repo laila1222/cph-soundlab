@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import './css/style.css';
+import AOS from 'aos';
+
 
 import Header from './components/header/header';
 import About from './components/about/about';
@@ -8,6 +9,9 @@ import Studio from './components/studio/studio';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 
+import 'aos/dist/aos.css';
+import './css/style.css';
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -15,6 +19,12 @@ class App extends Component {
     this.state = {
          
     }
+  }
+
+  componentDidMount(){
+    AOS.init({
+      duration : 2000
+    })
   }
 
   render() {
