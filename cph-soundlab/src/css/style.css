@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "LouisGeorgeCafe-Bold";
+  src: url("./LouisGeorgeCafe-Bold.eot") format("embedded-opentype");
+  src: url("./LouisGeorgeCafe-Bold.svg") format("svg"), url("./LouisGeorgeCafe-Bold.ttf") format("truetype"), url("./LouisGeorgeCafe-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 @keyframes fadeInOpacity {
   0% {
     opacity: 0; }
@@ -16,7 +23,6 @@ html {
 
 body {
   box-sizing: border-box;
-  margin: 5rem;
   height: 200vh; }
 
 .u-flex {
@@ -30,3 +36,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+body {
+  font-family: "LouisGeorgeCafe-Bold", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: black; }
+
+.section-about {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(240, 194, 3, 0.9), rgba(240, 194, 3, 0.9)), url(../images/studio.JPG);
+  background-size: cover; }
