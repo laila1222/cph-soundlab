@@ -9,6 +9,7 @@
     "aos": "^2.3.4",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
+    "react-coverflow": "^0.2.20",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
