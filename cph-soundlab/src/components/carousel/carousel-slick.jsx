@@ -9,13 +9,21 @@ import Record6 from "../../images/records/record6.jpg";
 import Record7 from "../../images/records/record7.jpg";
 import Record8 from "../../images/records/record8.jpg";
 import Record9 from "../../images/records/record9.jpg";
+import Bakerman from "../../images/BakermanBgThis.jpg";
+import DocLounge from "../../images/Doc-lounge.jpg";
+import HotelBoy from "../../images/Hotel-boy.jpg";
+import ImagineHero from "../../images/imagineHero.jpg";
+import RecordReleases from "../../images/Recordreleases.jpg";
+import UnderBroen from "../../images/UnderBron.png";
+
+
 
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './_carousel.scss';
 
-const recordsArray = [Record1, Record2, Record3, Record4, Record5, Record6, Record7, Record8, Record9]
+const recordsArray = [Bakerman, DocLounge, HotelBoy, ImagineHero, RecordReleases, UnderBroen, Record1, Record2, Record3, Record4, Record5, Record6, Record7, Record8, Record9]
 
 export default function SimpleCarousel() {
     const renderSlides = () =>
@@ -26,7 +34,7 @@ export default function SimpleCarousel() {
       ));
   
     return (
-      <div className="carousel">
+      <div className="carousel" data-aos="fade-up">
         <Slider dots={true}
         slidesToShow={3}
         slidesToScroll={1}
