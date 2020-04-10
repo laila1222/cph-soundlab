@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import "./_cool-carousel.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 import Record1 from "../../images/records/record1.jpg";
 import Record2 from "../../images/records/record2.jpg";
 import Record3 from "../../images/records/record3.jpg";
@@ -9,6 +12,7 @@ import Record6 from "../../images/records/record6.jpg";
 import Record7 from "../../images/records/record7.jpg";
 import Record8 from "../../images/records/record8.jpg";
 import Record9 from "../../images/records/record9.jpg";
+import "./_cool-carousel.scss";
 
 function CoolCarousel() {
   let recordsArray = [
@@ -49,10 +53,10 @@ function CoolCarousel() {
         );
       })}
       <button id="goLeft" onClick={goLeft}>
-        left
+        <FontAwesomeIcon icon={faChevronLeft}  />
       </button>
       <button id="goRight" onClick={goRight}>
-        right
+      <FontAwesomeIcon icon={faChevronRight}  />
       </button>
     </div>
   );

@@ -20,7 +20,7 @@ class Work extends Component {
         return (
             <section className="section-work">
         <div className="work u-center-middle" >
-          <h2 className="secondary-headline" data-aos='fade-up'>Work</h2>
+          {/* <h2 className="secondary-headline" data-aos='fade-up'>Work</h2> */}
           {/* <CarouselModern >
           </CarouselModern> */}
           {/* <SimpleCarousel /> */}
