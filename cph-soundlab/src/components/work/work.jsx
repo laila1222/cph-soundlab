@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import CarouselModern from "../carousel/carousel-modern";
+import SimpleCarousel from '../carousel/carousel-slick';
+import CoolCarousel from '../carousel/cool-carousel';
 
 
 
@@ -17,11 +19,12 @@ class Work extends Component {
     render() {
         return (
             <section className="section-work">
-        <div className="u-center-middle " >
+        <div className="work u-center-middle" >
           <h2 className="secondary-headline" data-aos='fade-up'>Work</h2>
-          <CarouselModern >
-              
-          </CarouselModern>
+          {/* <CarouselModern >
+          </CarouselModern> */}
+          {/* <SimpleCarousel /> */}
+          <CoolCarousel />
         </div>
       </section>
         )

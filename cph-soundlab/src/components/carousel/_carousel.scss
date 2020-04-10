@@ -1,0 +1,14 @@
+.carousel {
+    width: 80vw;
+
+    &__image-container {
+        background-color: pink;
+        padding: 1rem;
+    }
+
+
+    &__image {
+        // width: 15rem;
+        width: 100%;
+    }
+}

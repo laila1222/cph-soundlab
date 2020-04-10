@@ -9,6 +9,9 @@ import Studio from './components/studio/studio';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 
+// Styles
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import 'aos/dist/aos.css';
 import './css/style.css';
 
