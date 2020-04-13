@@ -10,9 +10,9 @@ import Record7 from "../../images/records/record7.jpg";
 import Record8 from "../../images/records/record8.jpg";
 import Record9 from "../../images/records/record9.jpg";
 import Bakerman from "../../images/BakermanBgThis.jpg";
-import DocLounge from "../../images/Doc-lounge.jpg";
-import HotelBoy from "../../images/Hotel-boy.jpg";
-import ImagineHero from "../../images/imagineHero.jpg";
+import DocLounge from "../../images/doc-lounge-mod.jpg";
+import HotelBoy from "../../images/hotelboy-mod.jpg";
+import ImagineHero from "../../images/imagine-mod.jpg";
 import RecordReleases from "../../images/Recordreleases.jpg";
 import UnderBroen from "../../images/UnderBron.png";
 
@@ -28,8 +28,11 @@ const recordsArray = [Bakerman, DocLounge, HotelBoy, ImagineHero, RecordReleases
 export default function SimpleCarousel() {
     const renderSlides = () =>
       recordsArray.map(recordImg => (
-        <div className="carousel__image-container">
-          <img className="carousel__image" src={recordImg} alt="record"/>
+        <div className="carousel__image-container u-margin-bottom-medium">
+          <img className="carousel__image u-margin-bottom-small" src={recordImg} alt="record"/>
+          <h3 className="carousel__title">Title</h3>
+          <p className="carousel__description">Lorem ipsum dolor sit amet consectetur oribus modi accusantium inventore odit mollitia perferendis placeat, irem non inventore saepe explicabo eius!</p>
+          <a href="#" className="carousel__link">More</a>
         </div>
       ));
   

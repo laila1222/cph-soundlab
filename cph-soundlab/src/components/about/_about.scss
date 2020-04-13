@@ -1,0 +1,23 @@
+@import '../../sass/abstracts/variables';
+
+.about {
+    text-align: center;
+    .primary-headline {
+        color: $color-white;
+    }
+
+    &__paragraph {
+        color: $color-white;
+        font-size: 2rem;
+    }
+
+    
+
+    &__image {
+        width: 15rem;
+        height: 15rem;
+        margin: 3rem;
+        border-radius: 3px;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    }
+}

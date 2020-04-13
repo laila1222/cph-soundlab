@@ -2,9 +2,9 @@
 
 .navbar {
   // Keeping navbar fixed
-  position: fixed;
-  top: 3rem;
-  right: 3rem;
+  // position: fixed;
+  // top: 3rem;
+  // right: 3rem;
   
   &__link {
     &:link,
@@ -12,9 +12,9 @@
       display: inline-block;
       padding: 1rem 1rem;
       margin: 0rem 2rem;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       text-decoration: none;
-      color: $color-grey;
+      color: $color-black;
       transition: all 0.4s ease-in-out;
       backface-visibility: hidden;
       border-bottom: 1px solid transparent;

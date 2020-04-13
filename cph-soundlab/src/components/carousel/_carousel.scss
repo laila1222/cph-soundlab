@@ -1,8 +1,10 @@
+@import '../../sass/abstracts/variables';
+
 .carousel {
     width: 80vw;
 
     &__image-container {
-        background-color: grey;
+        // background-color: grey;
         
         padding: 1rem;
     }
@@ -12,5 +14,18 @@
         // width: 15rem;
         width: 100%;
         max-height: 40rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__description {
+        font-size: 1.3rem;
+    }
+
+    &__link {
+        font-size: 1.3rem;
+        color: $color-black;
     }
 }
