@@ -23,7 +23,8 @@ html {
 
 body {
   box-sizing: border-box;
-  height: 200vh; }
+  height: 200vh;
+  width: 100vw; }
 
 .u-flex {
   display: flex; }
@@ -74,16 +75,39 @@ body {
   text-align: center;
   font-size: 3rem; }
 
+.button-text:link, .button-text:visited {
+  font-size: 1.6rem;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  margin-top: 1rem;
+  padding: 3px;
+  transition: all 0.2s; }
+
+.button-text:hover {
+  background-color: rgba(90, 90, 90, 0.3);
+  color: #ffff;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.button-text:active {
+  box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
 .section-about {
   height: 120vh;
   width: 100%; }
 
 .section-work {
-  background-image: linear-gradient(to right bottom, rgba(250, 244, 216, 0.918), rgba(245, 241, 199, 0.753)), url(../images/textur.jpg);
+  width: 100%;
   height: 130vh;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 254, 0.794), rgba(251, 251, 251, 0.856)), url(../images/textur.jpg);
+  filter: brightness(105%);
   position: relative;
   background-attachment: fixed;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover; }
 

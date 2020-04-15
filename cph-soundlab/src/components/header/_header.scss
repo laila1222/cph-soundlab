@@ -5,6 +5,7 @@
     background-color: $color-white;
     position: fixed;
     height: 5rem;
+    z-index: 10;
 
     &__content {
         width: 80%;

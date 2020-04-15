@@ -3,6 +3,10 @@
 .carousel {
     width: 80vw;
 
+    &__content {
+        padding: .5rem;
+    }
+
     &__image-container {
         // background-color: grey;
         
@@ -14,6 +18,8 @@
         // width: 15rem;
         width: 100%;
         max-height: 40rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+
     }
 
     &__title {
@@ -27,5 +33,9 @@
     &__link {
         font-size: 1.3rem;
         color: $color-black;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        color: rgba($color-grey, .6);
     }
 }
