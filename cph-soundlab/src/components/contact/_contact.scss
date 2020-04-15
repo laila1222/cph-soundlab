@@ -1,0 +1,41 @@
+@import "../../sass/abstracts/variables";
+
+.contact {
+  &__links-container {
+    justify-content: space-evenly;
+  }
+  &__content {
+    border-radius: 3px;
+    height: 30rem;
+    color: $color-white;
+    text-align: center;
+  }
+
+  &__links-container {
+    margin-top: 5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    color: $color-white;
+    font-size: 2rem;
+    &--text {
+      display: block;
+    }
+
+    &--to {
+      display: block;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__icon {
+    color: $color-white;
+    font-size: 3rem;
+  }
+}

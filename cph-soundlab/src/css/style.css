@@ -62,6 +62,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 2.5rem; }
 
+.u-margin-bottom-smallest {
+  margin-bottom: 1.5rem; }
+
 body {
   font-family: "LouisGeorgeCafe-Bold", Helvetica, sans-serif;
   font-weight: 400;
@@ -74,6 +77,12 @@ body {
 .secondary-headline {
   text-align: center;
   font-size: 3rem; }
+
+.tertiary-headline {
+  font-size: 2.2rem; }
+
+.paragraph {
+  font-size: 2rem; }
 
 .button-text:link, .button-text:visited {
   font-size: 1.6rem;
@@ -97,7 +106,7 @@ body {
   transform: translateY(-2px); }
 
 .section-about {
-  height: 120vh;
+  height: 100vh;
   width: 100%; }
 
 .section-work {
@@ -112,11 +121,17 @@ body {
   background-size: cover; }
 
 .section-studio {
+  height: 170vh;
   position: relative; }
 
 .section-contact {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(240, 194, 3, 0.9), rgba(240, 194, 3, 0.9)), url(../images/studio.JPG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 footer {
   height: 3rem;
