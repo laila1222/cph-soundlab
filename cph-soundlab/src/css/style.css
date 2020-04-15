@@ -76,13 +76,7 @@ body {
 
 .section-about {
   height: 120vh;
-  width: 100%;
-  background-color: #f0c203;
-  background-image: linear-gradient(to right bottom, rgba(240, 194, 3, 0.9), rgba(240, 194, 3, 0.9)), url(../images/studio.JPG);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  width: 100%; }
 
 .section-work {
   background-image: linear-gradient(to right bottom, rgba(250, 244, 216, 0.918), rgba(245, 241, 199, 0.753)), url(../images/textur.jpg);

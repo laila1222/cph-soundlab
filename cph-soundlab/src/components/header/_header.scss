@@ -1,9 +1,14 @@
 @import '../../sass/abstracts/variables';
 
 .header {
+    width: 100vw;
+    background-color: $color-white;
     position: fixed;
     height: 5rem;
-    width: 100%;
-    background-color: none;
-    padding: 1rem 10rem;
+
+    &__content {
+        width: 80%;
+        margin: 1rem auto;        
+
+    }
 }

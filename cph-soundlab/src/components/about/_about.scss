@@ -1,23 +1,47 @@
-@import '../../sass/abstracts/variables';
+@import "../../sass/abstracts/variables";
 
 .about {
-    text-align: center;
+  text-align: center;
+
+  &__intro {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.9),
+        rgba($color-primary, 0.9)
+      ),
+      url(../../images/studio.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height:30rem;
+    position: relative;
+    top: 5.5rem;
+
     .primary-headline {
+        width: 80%;
+        top: 80%;
         color: $color-white;
+        
     }
-
-    &__paragraph {
-        color: $color-white;
-        font-size: 2rem;
-    }
-
     
+  }
 
-    &__image {
-        width: 15rem;
-        height: 15rem;
-        margin: 3rem;
-        border-radius: 3px;
-        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    }
+  &__content {
+      width: 80%;
+      margin: 10rem auto 0 auto;
+  }
+
+
+  &__paragraph {
+    font-size: 2rem;
+  }
+
+  &__image {
+    width: 15rem;
+    height: 15rem;
+    margin: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  }
 }
