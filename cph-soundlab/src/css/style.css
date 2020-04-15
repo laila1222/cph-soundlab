@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
 @font-face {
   font-family: "LouisGeorgeCafe-Bold";
   src: url("./LouisGeorgeCafe-Bold.eot") format("embedded-opentype");
@@ -82,7 +83,8 @@ body {
   font-size: 2.2rem; }
 
 .paragraph {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-family: 'Nunito Sans', sans-serif; }
 
 .button-text:link, .button-text:visited {
   font-size: 1.6rem;
@@ -134,5 +136,6 @@ body {
   background-size: cover; }
 
 footer {
-  height: 3rem;
-  background-color: green; }
+  height: 15rem;
+  background-color: #5a5a5a;
+  position: relative; }

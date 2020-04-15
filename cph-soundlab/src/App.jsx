@@ -15,6 +15,7 @@ import "slick-carousel/slick/slick-theme.css";
 import 'aos/dist/aos.css';
 import './css/style.css';
 
+
 class App extends Component {
   constructor(props) {
     super(props)
