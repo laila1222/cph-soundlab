@@ -1,36 +1,22 @@
-@import '../../sass/abstracts/variables';
+@import "../../sass/abstracts/variables";
 
 .studio {
+  &__content {
+    width: 80vw;
+  }
 
-    &__content {
-        
-    }
+  &__images-container {
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
 
-
-    &__images-container {
-        position: relative;
-    }
-
-    &__image {
-        
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.15); 
-        transition: all .3s;
-        border-radius: 3px;
-
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-
-    &__image--1 {
-        width: 100%;
-    }
-
-    &__image--2 {
-        width: 58%;
-    }
-
-    &__image--3 {
-        width: 38%;
-    }
+  &__image {
+    width: 40%;
+    margin: 2rem auto;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transition: all 0.3s;
+    border-radius: 3px;
+    filter: grayscale(100%);
+  }
 }

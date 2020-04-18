@@ -9,12 +9,15 @@ function Contact() {
   return (
     <section className="section-contact contact">
       <div className="contact__content u-center-middle">
-        <h2 className="secondary-headline u-margin-bottom-medium">Contact</h2>
-        <p className="paragraph contact__paragraph">
+        <h2 className="secondary-headline u-margin-bottom-medium" data-aos="fade-up">Contact</h2>
+        <p className="paragraph contact__paragraph" data-aos="fade-up">
           Feel free to reach out to us with any questions. We are very friendly
           and always open for discussing new projects & interesting ideas.
         </p>
-        <div className="contact__links-container u-flex">
+        <p className="paragraph contact__paragraph" data-aos="fade-up">
+        hello@cphsoundlab.com
+        </p>
+        {/* <div className="contact__links-container u-flex" data-aos="fade-up">
           <div className="contact__links ">
             <a
               href="mailto:hello@cphsoundlab.com"
@@ -46,7 +49,7 @@ function Contact() {
 
             
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
