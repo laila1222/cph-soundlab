@@ -5,38 +5,27 @@
     justify-content: space-evenly;
   }
   &__content {
-    top: 45%!important;
+    // top: 40%!important;
     border-radius: 3px;
     height: 30rem;
-    color: $color-white;
     text-align: center;
+    
   }
 
-  &__links-container {
-    margin-top: 5rem;
+  &__paragraph {
+    font-size: 2.2rem;
   }
 
   &__link {
-    text-decoration: none;
+    display: block;
+    margin: 2rem;
+    color: $color-black;
+    
 
-    color: $color-white;
-    font-size: 2rem;
-    &--text {
-      display: block;
-    }
-
-    &--to {
-      display: block;
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
-      }
+    a {
+      color: $color-black;
     }
   }
 
-  &__icon {
-    color: $color-white;
-    font-size: 3rem;
-  }
+
 }

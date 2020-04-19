@@ -41,7 +41,7 @@ const recordsArray = [
 export default function SimpleCarousel() {
   const renderSlides = () =>
     recordsArray.map((recordImg) => (
-      <div className="carousel__image-container u-margin-bottom-medium" data-aos="fade-left">
+      <div className="carousel__image-container u-margin-bottom-medium" >
         <a href="#">
           <img
             className="carousel__image u-margin-bottom-small"
