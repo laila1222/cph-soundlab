@@ -7,7 +7,7 @@ import "./_contact.scss";
 
 function Contact() {
   return (
-    <section className="section-contact contact">
+    <section className="section-contact contact" id="contact">
       <div className="contact__content u-center-middle">
         <h2 className="secondary-headline u-margin-bottom-medium" data-aos="fade-up">Contact</h2>
         <p className="contact__paragraph" data-aos="fade-up">

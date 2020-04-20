@@ -4,7 +4,7 @@ import "./_about.scss";
 
 function About() {
   return (
-    <section className="section-about about">
+    <section className="section-about about" id="about">
       <div className="about__content">
         <div className="about__content__main-container u-margin-bottom-medium">
           <h1 className="primary-headline">

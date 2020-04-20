@@ -6,7 +6,7 @@ import './_studio.scss';
 
 function Studio() {
   return (
-    <section className="section-studio">
+    <section className="section-studio" id="studio">
       <div className="studio__content u-center-middle">
         <h2 className="secondary-headline u-margin-bottom-medium" data-aos="fade-up">Studio</h2>
         <div className="studio__images-container u-flex" data-aos="fade-up">

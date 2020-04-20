@@ -13,7 +13,7 @@ class Work extends Component {
 
   render() {
     return (
-      <section className="section-work">
+      <section className="section-work" id="work">
         <div className="work u-center-middle">
           <h2
             className="secondary-headline u-margin-bottom-medium"

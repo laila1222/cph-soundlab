@@ -1,0 +1,71 @@
+@import "../../sass/abstracts/variables";
+
+.menu {
+  &__hamburger {
+    cursor: pointer;
+    // position: fixed;
+    z-index: 10;
+    transition: all .2s;
+
+    &:hover {
+        transform: translateY(-2px)!important;
+    }
+
+    &:active {
+        transform: translateY(2px)!important;
+    }
+
+   
+    
+    // // need to fix this!
+    // &:hover > span:last-child {
+    //     top: -1px;
+    // }
+
+    // &:hover > span:first-child {
+    //     top: 1px;
+    // }
+  }
+
+  &__hamburger > span {
+    //   background-color: red!important;
+  }
+
+  &__background {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $color-primary;
+    display: none;
+  }
+
+  &__content {
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: block;
+      text-decoration: none;
+      color: $color-primary;
+      padding: .5rem;
+      margin: 2rem;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 4rem;
+      background-image: linear-gradient(
+          90deg, transparent 0%, transparent 50%, $color-white 50%
+      );
+      background-size: 230%;
+      transition: all 0.4s;
+
+      &:hover {
+        color: $color-grey;
+        background-position: 100%;
+        transform: translateX(1rem);
+      }
+    }
+  }
+}
