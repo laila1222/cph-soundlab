@@ -45,9 +45,8 @@ class Menu extends Component {
     }
   }
 
-  onBgClick = () => {
-    this.handleClick();
-  };
+
+  
 
   render() {
     return (
@@ -67,20 +66,20 @@ class Menu extends Component {
           className="menu__background"
           ref={this.menuBgRef}
           onClick={() => {
-            this.onBgClick();
+            this.handleClick();
           }}
         ></div>
         <div className="menu__content" ref={this.menuContentRef}>
-          <a href="#about" className="menu__link">
+          <a href="#about" className="menu__link" onClick={() => {this.handleClick()}}>
             About
           </a>
-          <a href="#work" className="menu__link">
+          <a href="#work" className="menu__link" onClick={() => {this.handleClick()}}>
             Work
           </a>
-          <a href="#studio" className="menu__link">
+          <a href="#studio" className="menu__link" onClick={() => {this.handleClick()}}>
             Studio
           </a>
-          <a href="#contact" className="menu__link">
+          <a href="#contact" className="menu__link" onClick={() => {this.handleClick()}}>
             Contact
           </a>
         </div>
