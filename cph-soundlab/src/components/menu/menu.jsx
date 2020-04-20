@@ -6,7 +6,8 @@ class Menu extends Component {
   constructor(props) {
     super(props);
 
-    this.menuOpenRef = React.createRef();
+    this.menuBgRef = React.createRef();
+    this.menuContentRef = React.createRef();
 
     this.state = {
       open: false,
@@ -14,29 +15,39 @@ class Menu extends Component {
   }
 
   handleClick() {
-    const menuOpen = this.menuOpenRef.current;
-    const hamburger = document.querySelectorAll('.menu__hamburger span');
-    const hamburgerLine1 = hamburger[0];
-    const hamburgerLine2 = hamburger[2];
+    const menuBg = this.menuBgRef.current;
+    const menuContent = this.menuContentRef.current;
+    const hamburgerWhole = document.querySelector(".menu__hamburger");
+    const hamburgerLines = document.querySelectorAll(".menu__hamburger span");
+
+    const hamburgerLine1 = hamburgerLines[0];
+    const hamburgerLine2 = hamburgerLines[2];
 
     this.setState({
       open: !this.state.open,
-    },() => console.log(hamburgerLine1));
+    });
 
     if (this.state.open) {
-        
-        menuOpen.style.display = "none";
-        hamburgerLine1.style.backgroundColor = "#5a5a5a";
-        hamburgerLine2.style.backgroundColor = "#5a5a5a";
-        
+      menuBg.style.display = "none";
+      menuContent.style.display = "none";
 
+      // hamburgerWhole.style.right = '3rem';
+
+      hamburgerLine1.style.backgroundColor = "#5a5a5a";
+      hamburgerLine2.style.backgroundColor = "#5a5a5a";
     } else {
-        menuOpen.style.display = "block";
-        menuOpen.style.backgroundColor = "#5a5a5a";
-        hamburgerLine1.style.backgroundColor = "#f0c203";
-        hamburgerLine2.style.backgroundColor = "#f0c203";
+      menuBg.style.display = "block";
+      menuContent.style.display = "block";
+      hamburgerLine1.style.backgroundColor = "#f0c203";
+      hamburgerLine2.style.backgroundColor = "#f0c203";
+
+      // hamburgerWhole.style.right = '-10rem';
     }
   }
+
+  onBgClick = () => {
+    this.handleClick();
+  };
 
   render() {
     return (
@@ -51,13 +62,27 @@ class Menu extends Component {
           animationDuration={0.5}
           className="menu__hamburger"
         />
-        <div className="menu__background" ref={this.menuOpenRef}>
-            <div className="menu__content u-center-middle">
-                <a href="#about" className="menu__link">About</a>
-                <a href="#work" className="menu__link">Work</a>
-                <a href="#studio" className="menu__link">Studio</a>
-                <a href="#contact" className="menu__link">Contact</a>
-            </div>
+
+        <div
+          className="menu__background"
+          ref={this.menuBgRef}
+          onClick={() => {
+            this.onBgClick();
+          }}
+        ></div>
+        <div className="menu__content" ref={this.menuContentRef}>
+          <a href="#about" className="menu__link">
+            About
+          </a>
+          <a href="#work" className="menu__link">
+            Work
+          </a>
+          <a href="#studio" className="menu__link">
+            Studio
+          </a>
+          <a href="#contact" className="menu__link">
+            Contact
+          </a>
         </div>
       </div>
     );

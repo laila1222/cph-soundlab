@@ -1,10 +1,14 @@
 @import "../../sass/abstracts/variables";
 
 .menu {
+    // position: relative;
+    
   &__hamburger {
     cursor: pointer;
-    // position: fixed;
+    position: relative;
     z-index: 10;
+    right: 3rem;
+    top: 1rem;
     transition: all .2s;
 
     &:hover {
@@ -37,11 +41,17 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: $color-primary;
+    background-color: $color-grey;
     display: none;
   }
 
   &__content {
+      background: pink;
+      display: none;
+      position: absolute;
+      top: 500%;
+      left: 43%;
+
   }
 
   &__link {
