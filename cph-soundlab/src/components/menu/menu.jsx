@@ -21,7 +21,8 @@ class Menu extends Component {
     const hamburgerLines = document.querySelectorAll(".menu__hamburger span");
 
     const hamburgerLine1 = hamburgerLines[0];
-    const hamburgerLine2 = hamburgerLines[2];
+    const hamburgerLine2 = hamburgerLines[1];
+    const hamburgerLine3 = hamburgerLines[2];
 
     this.setState({
       open: !this.state.open,
@@ -32,21 +33,21 @@ class Menu extends Component {
       menuContent.style.display = "none";
 
       // hamburgerWhole.style.right = '3rem';
+      hamburgerLine2.style.display = "block";
 
       hamburgerLine1.style.backgroundColor = "#5a5a5a";
       hamburgerLine2.style.backgroundColor = "#5a5a5a";
+      hamburgerLine3.style.backgroundColor = "#5a5a5a";
     } else {
       menuBg.style.display = "block";
       menuContent.style.display = "block";
       hamburgerLine1.style.backgroundColor = "#f0c203";
-      hamburgerLine2.style.backgroundColor = "#f0c203";
+
+      hamburgerLine3.style.backgroundColor = "#f0c203";
 
       // hamburgerWhole.style.right = '-10rem';
     }
   }
-
-
-  
 
   render() {
     return (
@@ -70,16 +71,40 @@ class Menu extends Component {
           }}
         ></div>
         <div className="menu__content" ref={this.menuContentRef}>
-          <a href="#about" className="menu__link" onClick={() => {this.handleClick()}}>
+          <a
+            href="#about"
+            className="menu__link"
+            onClick={() => {
+              this.handleClick();
+            }}
+          >
             About
           </a>
-          <a href="#work" className="menu__link" onClick={() => {this.handleClick()}}>
+          <a
+            href="#work"
+            className="menu__link"
+            onClick={() => {
+              this.handleClick();
+            }}
+          >
             Work
           </a>
-          <a href="#studio" className="menu__link" onClick={() => {this.handleClick()}}>
+          <a
+            href="#studio"
+            className="menu__link"
+            onClick={() => {
+              this.handleClick();
+            }}
+          >
             Studio
           </a>
-          <a href="#contact" className="menu__link" onClick={() => {this.handleClick()}}>
+          <a
+            href="#contact"
+            className="menu__link"
+            onClick={() => {
+              this.handleClick();
+            }}
+          >
             Contact
           </a>
         </div>
