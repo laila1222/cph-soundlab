@@ -21,7 +21,7 @@ function Footer() {
             <FontAwesomeIcon icon={faEnvelope} className="footer__font" />
           </a>
         </div>
-        <p className="paragraph footer__text">
+        <p className="footer__text">
           Copenhagen Sound Lab 2020. All rights reserved.
         </p>
       </div>
